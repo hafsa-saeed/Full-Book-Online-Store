@@ -1,0 +1,17 @@
+Backened Story:  
+
+=> sab se pehle do folders bnae fronted or backend then decide hua ke pehle backened ka code liken last pr fronted pr
+=> ak conn (connection) ke floder mein conn ki file bnai jis mein mongoode ko require kia or database ko apni connect kia atlas ki database se
+=> .env file bnai jis mein apna port number or database ka link rakha
+=> models ka folder bnaea jis mein jitna jitne apne project kelie schemas the wo sare bnae mein ne means users ka schema phur orders ka schema then books ka scema
+=> or iske bad routes ka flder bnaea jis mein
+=> user.js ki file mein express ko require kia take post get requiest wagher ause kr sken or then sighn up page kelie condtions likhi jo jo database se data require tha wo use kia
+=> bycrypt packaage we use to hide our passwords from data base for secuirity purpose
+=> bycryptjs packaage ko install kia
+=> user.js  file mein  sighn uin page kelie code likha condtions likhi jo jo database se data require tha wo use kia
+=> pkg install kia jsonwebtoken
+=> phir ham ne sighn up ke thorugh ak admin ka data store kia jismein uska password uska email waghera and ak user take inhin ke hisab se next sab process kren
+=> authorization ka function bnaea user info get krne kelie route bnaea then address update krne kelie or ye sab same user.js ki file mein kia
+=> ab new file bnai routes folder ke andar book.js or us mein code likhen ge conditions lgaen ge for users or for admin dono kelie different conditions hongi phir
+=> book.js ke sare apis bnane ke bad jo books user favourites mein add kre ga delete kre waghera to us cheez kelie ham usko favourites.js ki file bnae ge or apis likhen ge
+=> ham ne book.js ke bad favourites.js ke bad cart.js ki file bnai them order.js ki in mein jitne apis the wo likhe or is trha hmari Backened complete hoi...
