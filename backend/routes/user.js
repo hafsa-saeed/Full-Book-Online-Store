@@ -84,7 +84,7 @@ router.post("/sign-in", async (req, res) => {
 });
 
 //get-user-informaiton
-router.get("/get-user-informaiton", authenticateToken, async (req, res) => {
+router.get("/get-user-information", authenticateToken, async (req, res) => {
   try {
     const { id } = req.headers;
     const data = await User.findById(id).select("-password");
