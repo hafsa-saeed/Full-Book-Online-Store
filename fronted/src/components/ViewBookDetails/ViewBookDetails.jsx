@@ -31,7 +31,7 @@ const ViewBookDetails = () => {
   };
   const handleFavourite = async () => {
     const response = await axios.put(
-      "http://localhost:1000/api/v1/add-book-to-favourite",
+      "https://full-book-online-store-nqqu-hyax2vqy0.vercel.app/api/v1/add-book-to-favourite",
       {},
       { headers }
     );
@@ -40,7 +40,7 @@ const ViewBookDetails = () => {
 
   const deleteBook = async () => {
     const response = await axios.delete(
-      "http://localhost:1000/api/v1/delete-book",
+      "https://full-book-online-store-nqqu-hyax2vqy0.vercel.app/api/v1/delete-book",
       { headers }
     );
     alert(response.data.message);
@@ -48,7 +48,7 @@ const ViewBookDetails = () => {
   };
   const handleCart = async () => {
     const response = await axios.put(
-      "http://localhost:1000/api/v1/add-to-cart",
+      "https://full-book-online-store-nqqu-hyax2vqy0.vercel.app/api/v1/add-to-cart",
       {},
       { headers }
     );
