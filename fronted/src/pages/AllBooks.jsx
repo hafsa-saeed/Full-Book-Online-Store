@@ -7,9 +7,9 @@ const AllBooks = () => {
   const [Data, setData] = useState();
   useEffect(() => {
     const fetch = async () => {
-      const response = await axios.get(
-        "http://localhost:1000/api/v1/get-all-books"
-      );
+   const response = await axios.get(
+  "https://full-book-online-store-nqqu-hyax2vqy0.vercel.app/api/v1/get-all-books"
+);
       setData(response.data.data);
     };
     fetch();
