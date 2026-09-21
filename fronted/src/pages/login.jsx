@@ -31,8 +31,8 @@ const Login = () => {
         console.log("✅ Login Response:", response.data);
 
         // ✅ localStorage me data set
-        dispatch(authActions.login(response.data.role));
-        dispatch(authActions.changeRole());
+        dispatch(authActions.login());
+dispatch(authActions.changeRole(response.data.role));
         localStorage.setItem("id", response.data.id);
         localStorage.setItem("token", response.data.token);
         localStorage.setItem("role", response.data.role);
