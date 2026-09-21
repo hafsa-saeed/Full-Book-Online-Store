@@ -24,7 +24,7 @@ const AllOrders = () => {
     const fetchOrders = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:1000/api/v1/get-all-orders",
+          "https://full-book-online-store-nqqu-hyax2vqy0.vercel.app/api/v1/get-all-orders",
           { headers }
         );
         setAllOrders(response.data.data);
@@ -41,7 +41,7 @@ const AllOrders = () => {
 
     try {
       const response = await axios.put(
-        `http://localhost:1000/api/v1/update-status/${orderId}`,
+        `https://full-book-online-store-nqqu-hyax2vqy0.vercel.app/api/v1/update-status/${orderId}`,
         { status: statusValue },
         { headers } // ✅ must include role
       );
