@@ -16,7 +16,7 @@ const UserOrderHistory = () => {
     const fetchOrders = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:1000/api/v1/get-order-history",
+          "https://full-book-online-store-nqqu-hyax2vqy0.vercel.app/api/v1/get-order-history",
           { headers }
         );
         setOrderHistory(response.data.data || []);
