@@ -17,7 +17,7 @@ const Cart = () => {
   // 🟢 Fetch user cart
   useEffect(() => {
     axios
-      .get("http://localhost:1000/api/v1/get-user-cart", { headers })
+      .get("http://full-book-online-store-nqqu-hyax2vqy0.vercel.app/api/v1/get-user-cart", { headers })
       .then((res) => {
         setCart(res.data.data);
       })
