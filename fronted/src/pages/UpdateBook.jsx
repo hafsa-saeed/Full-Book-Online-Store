@@ -39,7 +39,7 @@ const UpdateBook = () => {
       } else {
         // TODO: change this API if your backend has an update route
         const response = await axios.put(
-          "http://localhost:1000/api/v1/update-book",
+          "https://full-book-online-store-nqqu-hyax2vqy0.vercel.app/api/v1/update-book",
           Data,
           { headers }
         );
