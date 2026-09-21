@@ -34,8 +34,16 @@ const SignUp = () => {
         navigate("/Login");
       }
     } catch (error) {
-      alert(error.response.data.message);
-    }
+  console.error("SignUp Error:", error);
+
+  if (error.response) {
+    alert(error.response.data.message || "Sign up failed");
+  } else if (error.request) {
+    alert("Backend se response nahi aa raha");
+  } else {
+    alert(error.message);
+  }
+}
   };
 
   return (
