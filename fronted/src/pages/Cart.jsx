@@ -39,7 +39,7 @@ const Cart = () => {
 
     try {
       await axios.put(
-        `http://localhost:1000/api/v1/remove-from-cart/${bookid}`,
+        `https://full-book-online-store-nqqu-hyax2vqy0.vercel.app/api/v1/remove-from-cart/${bookid}`,
         {},
         { headers }
       );
@@ -60,7 +60,7 @@ const Cart = () => {
 
     try {
       const res = await axios.put(
-        "http://localhost:1000/api/v1/place-order",
+        "https://full-book-online-store-nqqu-hyax2vqy0.vercel.app/api/v1/place-order",
         { order: Cart },
         { headers }
       );
