@@ -22,7 +22,7 @@ const Settings = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:1000/api/v1/get-user-information",
+          "https://full-book-online-store-nqqu-hyax2vqy0.vercel.app/api/v1/get-user-information",
           { headers }
         );
         setProfileData(response.data);
@@ -38,7 +38,7 @@ const Settings = () => {
   const submitAddress = async () => {
     try {
       const response = await axios.put(
-        "http://localhost:1000/api/v1/update-address",
+        "https://full-book-online-store-nqqu-hyax2vqy0.vercel.app/api/v1/update-address",
         Value,
         { headers }
       );
