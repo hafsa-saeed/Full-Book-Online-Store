@@ -17,7 +17,7 @@ const Profile = () => {
     const fetch = async () => {
       const response = await axios.get(
      
-        "http://full-book-online-store-nqqu-hyax2vqy0.vercel.app/api/v1/get-user-information",
+        "https://full-book-online-store-nqqu-hyax2vqy0.vercel.app/api/v1/get-user-information",
         { headers }
       );
       setProfile(response.data);
