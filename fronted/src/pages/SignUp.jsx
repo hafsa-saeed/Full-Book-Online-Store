@@ -27,7 +27,7 @@ const SignUp = () => {
         alert("All fields are required");
       } else {
        const response = await axios.post(
-  "https://full-book-online-store-nqqu-hyax2vqy0.vercel.app/api/v1/sign-up",
+  "https://https://full-book-online-store-nqqu.vercel.app/api/v1/sign-up",
   values
 );
         alert(response.data.message);
